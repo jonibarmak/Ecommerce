@@ -2,7 +2,7 @@ from django.shortcuts import render
 from products.models import Products 
 
 def create_product(request):
-    new_product=Products.objects.create(name="coca cola 1l",price=350)
+    new_product=Products.objects.create(name="Coca-Cola 1.75l",price=450,stock=20)
     context={ 
         "new_product":new_product
     }
