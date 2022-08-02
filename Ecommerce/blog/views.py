@@ -12,7 +12,7 @@ def create_article(request):
     return render(request,"articles/new_article.html",context=context)
 
 def list_products(request):
-    products= Products.objects.all()
+    products= Articles.objects.all()
     context={
         "products":products
     }
