@@ -10,7 +10,7 @@ def create_product(request):
         if form.is_valid():
             Products.objects.create(
                 name=form.cleaned_data["name"],
-                
+                description=form.cleaned_data["description"],               
                 price=form.cleaned_data["price"],
                 stock=form.cleaned_data["stock"]                
             )
